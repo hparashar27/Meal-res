@@ -1,25 +1,8 @@
 
-import React from 'react'
-// import styles from './Types.module.css'
-import Link from 'next/link';
+import Types from "@/components/Types/Types"
 
-const FetchTypes = async () =>{
-    const FetchAreas = await fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=c');
-    const response = await FetchAreas.json();
-return response.meals.map((a)=>a.strArea);
-}
-
-const page = async () => {
-    const area =  await FetchTypes();
-  return (
-    <div>
-      {area && area.map((as,idx)=>{
-<Link href={`/types/${as}`} key={idx}>
-  {as}
-</Link>
-      })}
-    </div>
+export default function page(){
+  return(
+    <Types/>
   )
 }
-
-export default page;
