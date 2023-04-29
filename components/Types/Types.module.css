@@ -1,0 +1,8 @@
+.area_container{
+    display: flex;
+    background-color: antiquewhite;
+}
+
+.strArea{
+    color: aqua;
+}

@@ -1,0 +1,14 @@
+.Header_top{
+    background-color: rgb(212, 176, 245);
+    padding: 15px;
+    font-size: x-large;
+    font-family: poppins;
+    display: flex;
+    color: black;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.Header_top :hover{
+color: blueviolet;
+}
