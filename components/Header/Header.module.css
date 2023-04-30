@@ -7,8 +7,27 @@
     color: black;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: start
 }
 .Header_top :hover{
 color: blueviolet;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.back_button{
+    border: 1px ;
+    border-radius: 5px;
+    background-color: blueviolet;
 }
