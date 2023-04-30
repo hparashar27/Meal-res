@@ -1,0 +1,16 @@
+.Detail_container{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+}
+
+.img{
+object-fit: cover;
+}
+
+.details{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:center;
+
+}

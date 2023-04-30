@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
+import styles from "@/components/recipieDetails/recipieDetails.module.css"
 
 const getRecipieById = async (id) =>{
    const res = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`);
@@ -8,10 +9,11 @@ const getRecipieById = async (id) =>{
 
 const page = async ({params}) => {
    const recipeDetails = await getRecipieById(params.id);
-   const details = recipeDetails.meals
+   const details = recipeDetails.meals[0]
  return(
     <>
-      <div>
+      <div className={styles.Detail_container}>
+        <div className={styles.img}>
         <Image
           alt="Recipe"
           width={500}
@@ -19,6 +21,13 @@ const page = async ({params}) => {
           src={details.strMealThumb}
           className="w-full"
         />
+        </div>
+        <div className={styles.details}>
+           <h1>Recipie : {details.strMeal}</h1>
+           <h2>Recipie's Country : {details.strArea}</h2>
+           <h4>Category :{details.strCategory}</h4>
+           <h3>Steps to make : <br/>{details.strInstructions}</h3>
+        </div>
       </div>
     </>
  )
