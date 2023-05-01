@@ -16,6 +16,7 @@ color: blueviolet;
 .header{
     display: flex;
     flex-direction: row;
+    margin: 10px;
     justify-content: space-between;
 }
 
@@ -27,7 +28,19 @@ color: blueviolet;
 }
 
 .back_button{
+    padding-bottom: 4px;
     border: 1px ;
     border-radius: 5px;
     background-color: blueviolet;
+}
+.Home_button{
+    padding: 5px;
+    border: 1px;
+    display: flex;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: blueviolet;
+}
+.Home_button:hover{
+    background-color: rgb(173, 92, 249); ;
 }

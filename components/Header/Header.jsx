@@ -14,7 +14,7 @@ const Header = () => {
     <div className={styles.header}>
     <div className={styles.Header_top}>
       <Link href='/'>
-    <h2>FOOOOOOOOOD</h2>  
+    <h2>FOODIE</h2>  
       </Link>
       </div>
       <div className={styles.back}>
