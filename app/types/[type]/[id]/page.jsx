@@ -9,7 +9,7 @@ const getRecipieById = async (id) =>{
 
 const page = async ({params}) => {
    const recipeDetails = await getRecipieById(params.id);
-   const details = recipeDetails.meals[0]
+   const details =  recipeDetails && recipeDetails.meals ? recipeDetails.meals[0] : {};
  return(
     <>
       <div className={styles.Detail_container}>
