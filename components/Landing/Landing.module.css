@@ -32,3 +32,19 @@ color: #fff;
   .landing button:hover{
     background-color: blueviolet ;
   }
+  @media only screen and (max-width: 768px) {
+    .landing {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Media queries for smaller screens */
+  @media only screen and (max-width: 940px) {
+    .landing {
+      font-size: 1.2rem;
+    }
+    .img{
+      height: 100vh;
+      width: 100vw;
+    }
+  }

@@ -26,7 +26,7 @@ const page = async ({params}) => {
            <h1>Recipie : {details.strMeal}</h1>
            <h2>Recipie's Country : {details.strArea}</h2>
            <h4>Category :{details.strCategory}</h4>
-           <h3>Steps to make : <br/>{details.strInstructions}</h3>
+           <h3 className={styles.para}>Steps to make : <br/>{details.strInstructions}</h3>
         </div>
       </div>
     </>

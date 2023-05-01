@@ -28,7 +28,7 @@ color: blueviolet;
 }
 
 .back_button{
-    padding-bottom: 4px;
+    padding: 4px;
     border: 1px ;
     border-radius: 5px;
     background-color: blueviolet;
@@ -43,4 +43,12 @@ color: blueviolet;
 }
 .Home_button:hover{
     background-color: rgb(173, 92, 249); ;
+}
+
+.loading{
+    font-size: 2rem;
+    display: flex;
+    color: blueviolet;
+    justify-content:center;
+    font-family: poppins;
 }
